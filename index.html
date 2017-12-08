@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>I Love Movies</title>
+
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">I Love Movies Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://www.youtube.com/results?search_query=movie+trailers">Trailers</a></li>
+                    <li><a href="http://www.imdb.com/">IMDb</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reviews Crities <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.rottentomatoes.com/">RottenTomatoes</a></li>
+                            <li><a href="https://www.fandango.com/">FanDango</a></li>
+                            <li><a href="http://www.metacritic.com/movie">Metacritic</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://yourcountdown.to/tag/movies">New Movies Countdowns</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.youtube.com/results?search_query=behind+the+scenes">Behind the scenes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#search">Search Here</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+  <div id="search">
+      <button type="button" class="close">×</button>
+      <form>
+          <input id= "searchinput" type="search" value="" placeholder="type keyword(s) here" />
+          <button id= "searchbutton" disabled type="submit" class="btn btn-primary">Search</button>
+      </form>
+  </div>
+
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <h1>Welcome I Love Movies</h1>
+        <p class="lead">Check out trailers</p>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Movie Info</h2>
+            <p>
+              <div class="container">
+                <div id="movies-view"></div>
+                  <!-- Rendered Buttons will get Dumped Here  -->
+                  <div id="buttons-view"></div>
+                  <form id="movie-form">
+                    <label for="movie-input">Add a Movie Bro</label>
+                    <input type="text" id="movie-input"><br>
+                    <!-- Button triggers new movie to be added -->
+                    <input id="add-movie" type="submit" value="Add a Movie Bro">
+                    <label for="movie-input">Add a Movie Bro</label>
+                      
+                  </form>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Get the First Peak</h2>
+              <div id = "Youtube">
+
+                <h1>Trailer</h1>
+                <!--<iframe id="player" class="embed-responsive-item" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>-->
+                <div id="playerholder">
+                  <div id="ytplayer"></div>
+                </div>
+                <p></p>
+
+              <!--<iframe id="ytplayer" type="text/html" width="640" height="360"
+              src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+              frameborder="0"></iframe>-->
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact me</h2>
+            <h3><a href="https://github.com/daxon2009">~Jack~</a></h3>
+            <p class="lead"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Jack Weng 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady" type="text/javascript"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  
+    <script type="text/javascript" src="asset/javascript/javascript_search.js"></script>
+    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+    <script type="text/javascript" src="assets/javascript/imdb2.js"></script>
+
+  </body>
+
+</html>
